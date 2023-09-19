@@ -2,7 +2,7 @@ import axios from "axios";
 import { getSession } from "next-auth/react";
 
 const axiosInstance = axios.create({
-  baseURL: "https://taskmanager-backend.onrender.com/",
+  baseURL: "https://taskmanager-backend-h7d5.onrender.com/",
   headers: {
     Accept: "application/json",
     "Content-Type": "application/json",
