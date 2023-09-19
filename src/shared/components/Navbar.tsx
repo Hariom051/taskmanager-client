@@ -32,8 +32,6 @@ export const Navbar = () => {
   const signout=async()=>{
     setflagfordisabled(true)
     try{
-     
-      await axiosInstance.get("/logout");
       toaster.success("Logout Successful")
       await signOut({ callbackUrl: "/login", redirect: true });
     }

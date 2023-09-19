@@ -7,16 +7,8 @@ import React from 'react'
 import { useEffect } from 'react'
 const Signout:NextPage = () => {
    useEffect(()=>{
-         const signout =async()=>{
-          signOut({callbackUrl:"/login",redirect:true});
-         try{
-            await  axiosInstance.get("/logout");
-         }
-         catch(e:any){
-        
-         }
-         }
-         signout()
+    signOut({callbackUrl:"/login",redirect:true});
+    
     },[])
   return (
     <div>
